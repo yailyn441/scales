@@ -1,25 +1,32 @@
 /*
-Yailyn Cera 
+Yailyn Cera
 September 11,2024
 Design and  develop a programs that combines control structures using nested loops
 */
-void setup (){ 
+void setup (){
   size(600,600);
   noLoop();
+  background (4,176,207);
 }
 
 void draw() {
-//int y=0; 
-//int x=0; //intialize variables
-//for(y = 0; y < 601; y += 65){ //set start, stop, and step increment
-//for(x = 0; x < 601; x += 65){ // adjust these values to control spacing
-scale(0,0);
-
-//}
-//} 
+float y;
+float x; //initialize variables
+for(y = -100; y < 601; y += 200){//et start, stop, and step increment
+for(x =-100 ; x < 601; x += 200){ // adjust these values to control spacing
+scale(x,y);
+}
+}
 }
 
 void scale(float x, float y) {
+   fill(random(255), random(255), random(255)); // Random fill color
+  stroke(0); // Black stroke color
+  strokeWeight(2); // Stroke weight
+beginShape();
+size(600,600);
+beginShape();
+
 beginShape();
 curveVertex(x+150,y+50);
 curveVertex(x+150,y+50);
